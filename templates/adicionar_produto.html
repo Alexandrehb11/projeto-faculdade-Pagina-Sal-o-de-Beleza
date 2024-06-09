@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Adicionar Produto</title> 
+        <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <body> 
+        <form method="POST" class="adicionar_produto_form"> 
+            <label class="label_adicionar_produto">Adicionar Produto no Estoque</label></br>
+            <div class="form_div">
+                <label class="label_form label_nome_produto">Nome do Produto:</label> 
+                <input type="name" name="nome_produto" class="input_adicionar" required><br/> 
+                <label class="label_form label_valor_produto">Valor do Produto:</label> 
+                <input type="number" name="valor_produto" class="input_adicionar" required><br/> 
+                <label class="label_form label_tipo_despesa">Tipo de Despesa:</label> 
+                <input type="name" name="tipo_despesa" class="input_adicionar" required><br/> 
+                <label class="label_form label_categoria">Categoria:</label> 
+                <input type="name" name="categoria" class="input_adicionar" required><br/> 
+                <label class="label_form label_saldo">Saldo:</label> 
+                <input type="name" name="saldo" class="input_adicionar" required><br/> 
+                <input class="input_adicionar input_button" type = "submit" value = "Adicionar a lista"/><br/> 
+            </div>
+            
+        </form> 
+    </body> 
+</html>
